@@ -9,43 +9,53 @@ short int mandelbrot(double real, double imag, int max_iter) {
     for (int n = 0; n < max_iter; n++) {
         double r2 = z_real * z_real;
         double i2 = z_imag * z_imag;
-        if (r2 + i2 > 4.0) return n;
+        if (r2 + i2 > 4.0) return n;  // check the condition on the module, returns the number of iterations
+                                      // if the point doesn't belong to the Mandelbrot set
         z_imag = 2.0 * z_real * z_imag + imag;
         z_real = r2 - i2 + real;
     }
-    return max_iter;
+    return max_iter;  // returns max_iter if the point belongs to the Mandelbrot set
 }
 
 int main(int argc, char *argv[]) {
+
+    // default values
     int width = 800, height = 600;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
-    int max_iterations = 255; // Adjust this if needed, keeping short int's limit in mind
+    int max_iterations = 255;
+
     int world_size, world_rank;
 
     MPI_Init(&argc, &argv);
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
-
-    if (argc == 7) {
+    
+    // takes input if provided and change the format
+    if (argc == 8) {
         width = atoi(argv[1]);
         height = atoi(argv[2]);
         x_left = atof(argv[3]);
         y_lower = atof(argv[4]);
         x_right = atof(argv[5]);
         y_upper = atof(argv[6]);
+        max_iterations = atoi(argv[7]);
     }
 
-    int rows_per_process = height / world_size;
+    // divides the rows evenly among the processes, the remainder is handled by the last process
+    int rows_per_process = height / world_size;   
     int remainder_rows = height % world_size;
     int start_row = world_rank * rows_per_process;
     int end_row = start_row + rows_per_process;
     if (world_rank == world_size - 1) {
-        end_row += remainder_rows; // Handle remainder rows
+        end_row += remainder_rows;
     }
 
+    // allocates memory for partial results of each process
     short int* part_buffer = (short int*)malloc(width * (end_row - start_row) * sizeof(short int));
 
-    #pragma omp parallel for schedule(dynamic)
+    // OpenMP parallelization
+    // parallelization on a lot of cores. Each thread will calculate a part of the image
+    #pragma omp parallel for schedule(dynamic)  // dynamic scheduling: load distributed among the threads without an order
     for (int j = start_row; j < end_row; j++) {
         for (int i = 0; i < width; i++) {
             double x = x_left + i * (x_right - x_left) / width;
@@ -55,6 +65,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    // the root process will gather all the partial results and save the image
     short int* image_buffer = NULL;
     if (world_rank == 0) {
         image_buffer = (short int*)malloc(width * height * sizeof(short int));
@@ -73,10 +84,12 @@ int main(int argc, char *argv[]) {
         recvcounts[world_size - 1] += width * remainder_rows;
     }
 
+    // gathers the partial results
     MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_SHORT,
                 image_buffer, recvcounts, displs, MPI_SHORT,
                 0, MPI_COMM_WORLD);
 
+    // saves the image
     if (world_rank == 0) {
         FILE *file = fopen("image.pgm", "w");
         fprintf(file, "P2\n%d %d\n%d\n", width, height, max_iterations);
