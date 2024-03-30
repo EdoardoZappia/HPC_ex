@@ -25,17 +25,6 @@ long long current_time() {
     return ((long long)tv.tv_sec) * 1000000 + tv.tv_usec;
 }
 
-void save_image(short int* image_buffer, int width, int height, int max_iterations) {
-    FILE *file = fopen("mandelbrot.pgm", "w");
-    fprintf(file, "P2\n%d %d\n%d\n", width, height, max_iterations);
-    for (int i = 0; i < width * height; i++) {
-        fprintf(file, "%d ", image_buffer[i]);
-        if ((i + 1) % width == 0) fprintf(file, "\n");
-    }
-    fclose(file);
-    printf("Mandelbrot set generated and saved to 'mandelbrot.pgm'\n");
-}
-
 int main(int argc, char *argv[]) {
 
     // default values
@@ -84,7 +73,10 @@ int main(int argc, char *argv[]) {
 
         // allocates memory for partial results of each process
         short int* part_buffer = (short int*)malloc(width * (end_row - start_row) * sizeof(short int));
-
+        if (part_buffer == NULL) {
+            fprintf(stderr, "Errore di allocazione memoria\n");
+            MPI_Abort(MPI_COMM_WORLD, 1);
+        }
         // start measuring execution time
         MPI_Barrier(MPI_COMM_WORLD);
         start_time = current_time();
@@ -136,7 +128,12 @@ int main(int argc, char *argv[]) {
             }
 
             short int* part_buffer = (short int*)malloc(width * (end_row - start_row) * sizeof(short int));
-
+            
+            if (part_buffer == NULL) {
+            fprintf(stderr, "Errore di allocazione memoria\n");
+            MPI_Abort(MPI_COMM_WORLD, 1);
+            }
+        }
     // start measuring execution time
         MPI_Barrier(MPI_COMM_WORLD);
         start_time = current_time();
@@ -169,10 +166,7 @@ int main(int argc, char *argv[]) {
 
         free(part_buffer);
         }
-    }
+
     MPI_Finalize();
     return 0;
 }
-
-
-
