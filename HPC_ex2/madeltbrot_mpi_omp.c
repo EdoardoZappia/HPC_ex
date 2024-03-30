@@ -45,7 +45,6 @@ int main(int argc, char *argv[]) {
 
     unsigned char* part_buffer = (unsigned char*)malloc(width * (end_row - start_row) * sizeof(unsigned char));
 
-    // Inizia a misurare il tempo
     double start_time = MPI_Wtime();
 
     #pragma omp parallel for schedule(dynamic)
@@ -58,23 +57,41 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // Ferma il timer dopo la computazione
     double end_time = MPI_Wtime();
 
+    // Dichiarazione di image_buffer spostata qui per essere visibile fuori dall'if
     unsigned char* image_buffer = NULL;
     if (world_rank == 0) {
         image_buffer = (unsigned char*)malloc(width * height * sizeof(unsigned char));
     }
 
-    // Utilizza MPI_Gatherv per raccogliere i dati
-    // (codice di MPI_Gatherv omesso per brevità)
+    int* recvcounts = NULL;
+    int* displs = NULL;
 
     if (world_rank == 0) {
-        // Salva l'immagine e calcola il tempo totale
-        double total_time = end_time - start_time;
-        printf("Tempo totale di esecuzione: %f secondi.\n", total_time);
-        
-        // (codice per salvare l'immagine omesso per brevità)
+        recvcounts = (int*)malloc(world_size * sizeof(int));
+        displs = (int*)malloc(world_size * sizeof(int));
+        for (int i = 0; i < world_size; i++) {
+            recvcounts[i] = width * rows_per_process;
+            displs[i] = i * width * rows_per_process;
+        }
+        recvcounts[world_size - 1] += width * remainder_rows;
+    }
+
+    MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR,
+                image_buffer, recvcounts, displs, MPI_UNSIGNED_CHAR,
+                0, MPI_COMM_WORLD);
+
+    if (world_rank == 0) {
+        FILE *file = fopen("image.pgm", "w");
+        fprintf(file, "P5\n%d %d\n255\n", width, height);
+        fwrite(image_buffer, sizeof(unsigned char), width * height, file);
+        fclose(file);
+        printf("Mandelbrot set generated and saved to 'mandelbrot.pgm'\n");
+        printf("Total execution time: %f seconds.\n", end_time - start_time);
+        free(image_buffer);
+        free(recvcounts);
+        free(displs);
     }
 
     free(part_buffer);
