@@ -1,0 +1,26 @@
+Usage: ./mandelbrot width height x_left x_right y_lower y_upper max_iterations
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin007:672681:0:672681] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x145c27cfb1c0)
+[thin007:672704:0:672704] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x154ccf0fb1c0)
+Inconsistency detected by ld.so: dl-open.c: 581: dl_open_worker_begin: Assertion `_dl_debug_update (args->nsid)->r_state == RT_CONSISTENT' failed!
+[thin007:672737:0:672737] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14a394efb1c0)
+Inconsistency detected by ld.so: dl-open.c: 581: dl_open_worker_begin: Assertion `_dl_debug_update (args->nsid)->r_state == RT_CONSISTENT' failed!
+[thin007:672733:0:672733] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14c0ea2fb1c0)
+Inconsistency detected by ld.so: dl-open.c: 581: dl_open_worker_begin: Assertion `_dl_debug_update (args->nsid)->r_state == RT_CONSISTENT' failed!
+[thin008:4109270:0:4109270] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14e7dfcfb1c0)
+[thin008:4109271:0:4109271] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14b1d9afb1c0)
+[thin008:4109281:0:4109281] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x154bc3cfb1c0)
+[thin008:4109232:0:4109232] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1471a0cfb1c0)
+[thin008:4109235:0:4109235] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x147a288fb1c0)
+[thin008:4109249:0:4109249] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14f7adcfb1c0)
+Inconsistency detected by ld.so: dl-open.c: 581: dl_open_worker_begin: Assertion `_dl_debug_update (args->nsid)->r_state == RT_CONSISTENT' failed!
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[35027,1],17]
+  Exit code:    1
+--------------------------------------------------------------------------

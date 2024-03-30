@@ -1,0 +1,18 @@
+Usage: ./mandelbrot width height x_left x_right y_lower y_upper max_iterations
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin008:4109486:0:4109486] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14e09bcfb1c0)
+Inconsistency detected by ld.so: dl-open.c: 581: dl_open_worker_begin: Assertion `_dl_debug_update (args->nsid)->r_state == RT_CONSISTENT' failed!
+[thin008:4109488:0:4109488] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1492e74fb1c0)
+[thin008:4109490:0:4109490] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14ff6bcfb1c0)
+Inconsistency detected by ld.so: dl-open.c: 581: dl_open_worker_begin: Assertion `_dl_debug_update (args->nsid)->r_state == RT_CONSISTENT' failed!
+[thin008:4109504:0:4109504] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14d039efb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[36646,1],21]
+  Exit code:    1
+--------------------------------------------------------------------------
