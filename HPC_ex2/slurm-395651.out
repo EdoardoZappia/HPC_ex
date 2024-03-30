@@ -1,0 +1,15 @@
+Usage: ./mandelbrot width height x_left x_right y_lower y_upper max_iterations
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+[thin007:672223:0:672223] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x149949afb1c0)
+[thin007:672226:0:672226] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x14c8db8fb1c0)
+[thin007:672183:0:672183] Caught signal 11 (Segmentation fault: address not mapped to object at address 0x1550e1cfb1c0)
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[35543,1],17]
+  Exit code:    1
+--------------------------------------------------------------------------

@@ -25,6 +25,17 @@ long long current_time() {
     return ((long long)tv.tv_sec) * 1000000 + tv.tv_usec;
 }
 
+void save_image(short int* image_buffer, int width, int height, int max_iterations) {
+    FILE *file = fopen("mandelbrot.pgm", "w");
+    fprintf(file, "P2\n%d %d\n%d\n", width, height, max_iterations);
+    for (int i = 0; i < width * height; i++) {
+        fprintf(file, "%d ", image_buffer[i]);
+        if ((i + 1) % width == 0) fprintf(file, "\n");
+    }
+    fclose(file);
+    printf("Mandelbrot set generated and saved to 'mandelbrot.pgm'\n");
+}
+
 int main(int argc, char *argv[]) {
 
     // default values
