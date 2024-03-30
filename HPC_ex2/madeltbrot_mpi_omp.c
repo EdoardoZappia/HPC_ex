@@ -157,7 +157,10 @@ int main(int argc, char *argv[]) {
         }
 
         free(part_buffer);
+        }
     }
+    MPI_Finalize();
+    return 0;
 }
 
 
