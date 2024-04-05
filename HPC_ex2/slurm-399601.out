@@ -1,0 +1,9 @@
+Running with 24 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.000527 seconds.
+Running with 48 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.000292 seconds.
+Running with 96 MPI tasks.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.000217 seconds.

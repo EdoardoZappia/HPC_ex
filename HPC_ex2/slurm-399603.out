@@ -1,0 +1,9 @@
+Running with 800 x 600 resolution.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.169841 seconds.
+Running with 1600 x 1200 resolution.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.220425 seconds.
+Running with 3200 x 2400 resolution.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.209660 seconds.
