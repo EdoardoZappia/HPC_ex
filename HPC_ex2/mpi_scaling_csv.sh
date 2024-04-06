@@ -21,14 +21,11 @@ for total_tasks in {2..96..2}; do
     echo "Running with $total_tasks MPI tasks."
     
     # Esegui mpirun e cattura il tempo di esecuzione
-    start_time=$(date +%s.%N)
     mpirun -np $total_tasks ./mandelbrot 800 600 -2.0 -1.0 1.0 1.0 255
-    end_time=$(date +%s.%N)
-    
-    # Calcola il tempo di esecuzione
-    execution_time=$(echo "$end_time - $start_time" | bc)
     
     # Aggiungi i dati al file CSV
-    echo "$total_tasks,$execution_time_mpi" >> $output_file
+    execution_time=$(<temp_execution_time.txt)
+    echo "$total_tasks,$execution_time" >> $output_file
+    rm temp_execution_time.txt # Rimuovi il file temporaneo
 done
 

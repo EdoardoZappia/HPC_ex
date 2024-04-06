@@ -10,7 +10,7 @@
 module load openMPI/4.1.5/gnu/12.2.1
 
 # Definisci il nome del file CSV per salvare i risultati
-OUTPUT_CSV="execution_times.csv"
+OUTPUT_CSV="execution_times_omp.csv"
 
 # Inizializza il file CSV con l'intestazione se non esiste
 echo "OMP_NUM_THREADS,Execution_Time" > $OUTPUT_CSV
@@ -20,9 +20,14 @@ for OMP_NUM_THREADS in {1..24..1}; do
     echo "Running with $OMP_NUM_THREADS OpenMP threads."
     
     # Esegui il programma e salva il tempo di esecuzione
-    execution_time=$(mpirun ./mandelbrot 800 600 -2.0 -1.0 1.0 1.0 255 | grep "Total execution time" | awk '{print $4}')
+    mpirun ./mandelbrot 800 600 -2.0 -1.0 1.0 1.0 255
+
+    # Aggiungi i dati al file CSV
+    execution_time=$(<temp_execution_time.txt)
     
     # Salva il tempo di esecuzione nel file CSV
     echo "$OMP_NUM_THREADS,$execution_time" >> $OUTPUT_CSV
+    
+    rm temp_execution_time.txt
 done
 
