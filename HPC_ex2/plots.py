@@ -1,8 +1,9 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 
 def plot_scaling(filename, title):
-    data = np.loadtxt(filename)
+    data = pd.read_csv('execution_times_mpi.csv', header=None)
     x = data[:, 0]
     y = data[:, 1]
 
@@ -13,9 +14,9 @@ def plot_scaling(filename, title):
     plt.grid(True)
     plt.show()
 
-# Plot Weak Scaling
-plot_scaling('weak_scaling_data.txt', 'Weak Scaling')
+    # Plot Strong Scaling
+plot_scaling('execution_times_mpi.csv', 'Strong Scaling')
 
-# Plot Strong Scaling
-plot_scaling('strong_scaling_data.txt', 'Strong Scaling')
+# Plot Weak Scaling
+#plot_scaling('weak_scaling_data.txt', 'Weak Scaling')
 

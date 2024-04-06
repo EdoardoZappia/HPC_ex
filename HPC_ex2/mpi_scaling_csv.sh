@@ -11,7 +11,7 @@ module load openMPI/4.1.5/gnu/12.2.1
 export OMP_NUM_THREADS=1
 
 # Nome del file CSV per salvare i tempi di esecuzione
-output_file="execution_times.csv"
+output_file="execution_times_mpi.csv"
 
 # Creiamo l'intestazione del file CSV
 echo "Total Tasks,Execution Time (s)" > $output_file
@@ -29,6 +29,6 @@ for total_tasks in {2..96..2}; do
     execution_time=$(echo "$end_time - $start_time" | bc)
     
     # Aggiungi i dati al file CSV
-    echo "$total_tasks,$execution_time" >> $output_file
+    echo "$total_tasks,$execution_time_mpi" >> $output_file
 done
 
