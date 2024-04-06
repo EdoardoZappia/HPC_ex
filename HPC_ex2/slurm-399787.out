@@ -1,0 +1,10 @@
+Strong Scaling Analysis
+Running with 24 MPI tasks and problem size 800.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.000654 seconds.
+Strong Scaling analysis completed.
+Weak Scaling Analysis
+Running with 24 MPI tasks and problem size 400.
+Mandelbrot set generated and saved to 'mandelbrot.pgm'
+Total execution time: 0.001243 seconds.
+Weak Scaling analysis for 1 nodes completed.
