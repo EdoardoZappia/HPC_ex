@@ -18,7 +18,7 @@ echo "OMP_NUM_THREADS,Problem_Size,Execution_Time" > $OUTPUT_CSV
 BASE_COLS=800
 BASE_ROWS=600
 
-for OMP_NUM_THREADS in {1..24}; do
+for OMP_NUM_THREADS in {1..128..2}; do
     export OMP_NUM_THREADS
     # Aumenta la dimensione del problema proporzionalmente al numero di thread
     let cols=BASE_COLS*OMP_NUM_THREADS

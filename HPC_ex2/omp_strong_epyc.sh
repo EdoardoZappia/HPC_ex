@@ -15,7 +15,7 @@ OUTPUT_CSV="omp_strong_epyc.csv"
 # Inizializza il file CSV con l'intestazione se non esiste
 echo "OMP_NUM_THREADS,Execution_Time" > $OUTPUT_CSV
 
-for OMP_NUM_THREADS in {1..24..1}; do
+for OMP_NUM_THREADS in {1..128..2}; do
     export OMP_NUM_THREADS
     echo "Running with $OMP_NUM_THREADS OpenMP threads."
 
