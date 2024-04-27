@@ -1,0 +1,9 @@
+Processes,Size,Latency
+2,2,total
+2,4,total
+2,8,total
+2,16,total
+2,32,total
+2,64,total
+2,128,total
+2,256,total
