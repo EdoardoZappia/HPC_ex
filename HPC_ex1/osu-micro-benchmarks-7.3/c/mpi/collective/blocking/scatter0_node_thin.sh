@@ -28,6 +28,6 @@ do
 
         echo "$processes, $size, $result_bcast"
         # Scrivi i risultati nel file CSV
-        echo "$processes,$size,$result_bcast" >> scatter0_core_thin.csv
+        echo "$processes,$size,$result_bcast" >> scatter0_node_thin.csv
     done
 done
