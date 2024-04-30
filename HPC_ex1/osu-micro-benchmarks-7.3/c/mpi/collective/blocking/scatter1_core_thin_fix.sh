@@ -9,7 +9,7 @@
 
 module load openMPI/4.1.5/gnu/12.2.1
 
-echo "Processes,Size,Latency" > scatter0_core_thin.csv
+echo "Processes,Size,Latency" > scatter1_core_thin_fix.csv
 
 # Numero di ripetizioni per ottenere una media
 repetitions=10000
