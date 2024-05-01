@@ -1,0 +1,1280 @@
+Running with 1 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 2 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 3 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 4 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 5 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 6 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 7 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 8 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 9 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 10 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 11 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 12 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 13 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 14 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 15 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 16 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 17 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 18 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 19 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 20 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 21 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 22 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 23 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 24 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 25 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 26 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 27 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 28 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 29 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 30 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 31 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 32 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 33 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 34 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 35 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 36 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 37 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 38 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 39 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 40 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 41 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 42 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 43 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 44 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 45 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 46 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 47 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 48 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 49 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 50 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 51 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 52 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 53 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 54 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 55 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 56 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 57 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 58 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 59 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 60 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 61 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 62 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 63 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 64 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 65 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 66 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 67 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 68 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 69 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 70 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 71 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 72 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 73 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 74 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 75 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 76 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 77 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 78 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 79 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 80 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 81 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 82 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 83 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 84 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 85 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 86 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 87 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 88 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 89 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 90 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 91 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 92 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 93 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 94 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 95 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 96 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 97 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 98 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 99 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 100 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 101 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 102 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 103 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 104 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 105 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 106 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 107 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 108 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 109 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 110 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 111 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 112 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 113 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 114 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 115 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 116 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 117 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 118 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 119 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 120 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 121 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 122 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 123 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 124 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 125 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 126 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 127 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
+Running with 128 OpenMP threads.
+--------------------------------------------------------------------------
+mpirun was unable to launch the specified application as it could not access
+or execute an executable:
+
+Executable: ./mandel
+Node: epyc005
+
+while attempting to start process rank 0.
+--------------------------------------------------------------------------
