@@ -26,7 +26,7 @@ for OMP_NUM_THREADS in {1..128}; do
     echo "Running with $OMP_NUM_THREADS OpenMP threads."
 
     # Esegui il programma
-    mpirun -np 1 --map-by socket --bind-to socket ./mandel 2400 1600 -2.0 -1.0 1.0 1.0 255 ${OMP_NUM_THREADS}
+    mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot 2400 1600 -2.0 -1.0 1.0 1.0 255 ${OMP_NUM_THREADS}
 
     # Assumi che il tuo programma scriva il tempo di esecuzione in un file chiamato temp_execution_time.txt
     if [ -f temp_execution_time.txt ]; then
