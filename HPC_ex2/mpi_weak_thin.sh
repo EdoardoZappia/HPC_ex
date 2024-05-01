@@ -17,7 +17,7 @@ BASE_COLS=800
 BASE_ROWS=600
 
 for total_procs in {2..96..2}; do
-    let cols=BASE_COLS
+    let cols=BASE_COLS*total_procs
     let rows=BASE_ROWS*total_procs
     mpirun -np $total_procs ./mandelbrot $cols $rows -2.0 -1.0 1.0 1.0 255
     # Leggi il tempo di esecuzione dal file temporaneo

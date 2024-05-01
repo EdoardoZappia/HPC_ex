@@ -1,0 +1,2 @@
+/var/spool/slurm/d/job409894/slurm_script: line 19: syntax error near unexpected token `('
+/var/spool/slurm/d/job409894/slurm_script: line 19: `for total_procs in (2 4 8 16 32 48 64 96 128 160 192 224 256); do'
