@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 
     double global_start_time = MPI_Wtime();
 
-    int width = 800, height = 600;
+    int width = 0, height = 0;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
     int max_iterations = 255;
     int world_size, world_rank;
