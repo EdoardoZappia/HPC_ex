@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 
     double global_start_time = MPI_Wtime();
 
-    int width = 0, height = 0;
+    int width = 800, height = 600;
     double x_left = -2.0, x_right = 1.0, y_lower = -1.0, y_upper = 1.0;
     int max_iterations = 255;
     int world_size, world_rank;
@@ -36,22 +36,20 @@ int main(int argc, char **argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
 
-    if (argc == 8) {
+    if (argc != 9) {
+        fprintf(stderr, "Usage: %s width height x_left y_lower x_right y_upper max_iterations\n", argv[0]);
+        MPI_Finalize();
+        exit(1);
+    }
         width = atoi(argv[1]);
         height = atoi(argv[2]);
         x_left = atof(argv[3]);
         y_lower = atof(argv[4]);
         x_right = atof(argv[5]);
         y_upper = atof(argv[6]);
-	max_iterations = atoi(argv[7]);
-	int num_threads = atoi(argv[8]);
-    } else {
-        fprintf(stderr, "Usage: %s width height x_left y_lower x_right y_upper max_iterations\n", argv[0]);
-        MPI_Finalize();
-        exit(1);
-    }
-
-    omp_set_num_threads(num_threads);
+        max_iterations = atoi(argv[7]);
+        int num_threads = atoi(argv[8]);
+        omp_set_num_threads(num_threads);
 
     int rows_per_process = height / world_size;
     int extra_rows = height % world_size;
