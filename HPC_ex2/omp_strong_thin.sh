@@ -6,6 +6,7 @@
 #SBATCH --time=00:30:00
 #SBATCH --partition=THIN
 #SBATCH --exclusive
+#SBATCH --exclude fat[001-002]
 #SBATCH --exclude thin006
 
 module load openMPI/4.1.5/gnu/12.2.1
