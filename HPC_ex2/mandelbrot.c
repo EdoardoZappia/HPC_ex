@@ -87,6 +87,11 @@ int main(int argc, char *argv[]) {
 
     if (world_rank == 0) {
         // Root process final operations here
+        FILE *file = fopen("image.pgm", "w");
+        fprintf(file, "P5\n%d %d\n255\n", width, height);
+        fwrite(image_buffer, sizeof(unsigned char), width * height, file);
+        fclose(file);
+        //printf("Mandelbrot set generated and saved to 'image.pgm'\n");
         free(image_buffer);
         free(recvcounts);
         free(displs);
