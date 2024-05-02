@@ -14,13 +14,12 @@ OUTPUT_CSV="mpi_weak_epyc.csv"
 echo "MPI_Processes,Columns,Rows,Execution_Time" > $OUTPUT_CSV
 
 BASE_COLS=1000
+BASE_ROWS=1000
 
-for total_procs in {2..96..2}; do
-    let cols=$BASE_COLS
-    let rows=$BASE_ROWS*$total_procs
-    mpirun -np $total_procs ./mandelbrot $cols $rows -2.0 -1.0 1.0 1.0 255
-    # Leggi il tempo di esecuzione dal file temporaneo
-    execution_time=$(<temp_execution_time.txt)
+for total_procs in {2..256..2}; do
+    let cols=BASE_COLS
+    let rows=$((BASE_ROWS*total_procs))
+    execution_time=$(mpirun -np $total_procs ./mandelbrot $cols $rows -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS)
+    
     echo "$total_procs,$cols,$rows,$execution_time" >> $OUTPUT_CSV
-    rm temp_execution_time.txt # Rimuovi il file temporaneo
 done

@@ -9,6 +9,11 @@
 
 module load openMPI/4.1.5/gnu/12.2.1
 
+export OMP_PROC_BIND=spread
+export OMP_PLACES=cores
+export OMP_DISPLAY_ENV=true
+export OMP_VERBOSE=VERBOSE
+
 # Definisci il nome del file CSV per salvare i risultati
 OUTPUT_CSV="omp_weak_epyc.csv"
 
@@ -16,19 +21,17 @@ OUTPUT_CSV="omp_weak_epyc.csv"
 echo "OMP_NUM_THREADS,Problem_Size,Execution_Time" > $OUTPUT_CSV
 # Dimensione di base del problema per 1 thread OpenMP
 BASE_COLS=1000
+BASE_ROWS=1000
 
-for OMP_NUM_THREADS in {2..128..2}; do
+for OMP_NUM_THREADS in {1..128}; do
     export OMP_NUM_THREADS
-    # Aumenta la dimensione del problema proporzionalmente alla radice quadrata del numero di thread
-    let rows = $BASE_COLS * $OMP_NUM_THREADS
-    let cols = $BASE_COLS
+    # Aumenta la dimensione del problema proporzionalmente al numero di thread
+    let cols=$BASE_COLS
+    let rows=$((BASE_ROWS*OMP_NUM_THREADS))
+    # Esegui il programma e salva il tempo di esecuzione
+    execution_time=$(mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot $cols $rows -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS)
 
-    # Esegui il programma e misura il tempo di esecuzione
-    start_time=$(date +%s.%N)
-    mpirun --map-by socket --bind-to socket ./mandelbrot $cols $rows -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS
-    end_time=$(date +%s.%N)
-    execution_time=$(echo "$end_time - $start_time" | bc)
+    echo "$OMP_NUM_THREADS,$cols,$rows,$execution_time" >> $OUTPUT_CSV
 
-    # Salva i risultati nel file CSV
-    echo "$OMP_NUM_THREADS,$cols*$rows,$execution_time" >> $OUTPUT_CSV
+    
 done
