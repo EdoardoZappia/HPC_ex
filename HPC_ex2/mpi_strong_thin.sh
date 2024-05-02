@@ -19,7 +19,7 @@ output_file="mpi_strong_thin.csv"
 echo "Total Tasks,Execution Time (s)" > $output_file
 
 # Loop attraverso un numero variabile di task MPI totali
-for total_tasks in {2..96..2}; do
+for total_tasks in {1..48}; do
     echo "Running with $total_tasks MPI tasks."
 
     # Esegui mpirun e cattura il tempo di esecuzione

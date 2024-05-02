@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
     MPI_Comm_size(MPI_COMM_WORLD, &world_size);
     MPI_Comm_rank(MPI_COMM_WORLD, &world_rank);
 
-    if (argc == 9){
+    if (argc == 9) {
         width = atoi(argv[1]);
         height = atoi(argv[2]);
         x_left = atof(argv[3]);
@@ -45,7 +45,6 @@ int main(int argc, char *argv[]) {
         max_iterations = atoi(argv[7]);
         num_threads = atoi(argv[8]);
         omp_set_num_threads(num_threads);
-
     }
 
     int rows_per_process = height / world_size;
@@ -65,18 +64,32 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    unsigned char* image_buffer = NULL;
+    // Prepare for MPI_Gatherv
+    int *recvcounts = NULL;
+    int *displs = NULL;
+    unsigned char *image_buffer = NULL;
     if (world_rank == 0) {
-        image_buffer = (unsigned char*)malloc(width * height * sizeof(unsigned char));
+        recvcounts = malloc(world_size * sizeof(int));
+        displs = malloc(world_size * sizeof(int));
+        int displacement = 0;
+        for (int i = 0; i < world_size; i++) {
+            recvcounts[i] = width * (rows_per_process + (i == world_size - 1 ? remainder_rows : 0));
+            displs[i] = displacement;
+            displacement += recvcounts[i];
+        }
+        image_buffer = (unsigned char*)malloc(displacement * sizeof(unsigned char));
     }
 
-    MPI_Gather(part_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR, image_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR, 0, MPI_COMM_WORLD);
+    MPI_Gatherv(part_buffer, width * (end_row - start_row), MPI_UNSIGNED_CHAR,
+                image_buffer, recvcounts, displs, MPI_UNSIGNED_CHAR,
+                0, MPI_COMM_WORLD);
     free(part_buffer);
 
     if (world_rank == 0) {
         // Root process final operations here
-        // Example: Save the gathered image to a file or perform additional analysis
         free(image_buffer);
+        free(recvcounts);
+        free(displs);
     }
 
     double global_end_time = MPI_Wtime();
