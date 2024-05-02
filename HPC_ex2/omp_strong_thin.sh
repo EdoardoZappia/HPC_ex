@@ -27,10 +27,9 @@ for OMP_NUM_THREADS in {1..24..1}; do
     echo "Running with $OMP_NUM_THREADS OpenMP threads."
 
     # Esegui il programma e salva il tempo di esecuzione
-    execution_time=$(mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot 1000 1000 -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS)
+    execution_time=$(mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot 800 600 -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS)
 
     # Salva il tempo di esecuzione nel file CSV
     echo "$OMP_NUM_THREADS,$execution_time" >> $OUTPUT_CSV
 
 done
-
