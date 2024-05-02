@@ -1,3 +1,5 @@
+MPI WEAK
+
 #!/bin/bash
 #SBATCH --job-name=HPC-OMP-WeakScaling
 #SBATCH --nodes=1  # Utilizza un singolo nodo
@@ -30,7 +32,7 @@ for OMP_NUM_THREADS in {1..24}; do
     let cols=$BASE_COLS
     let rows=$((BASE_ROWS*OMP_NUM_THREADS))
     # Esegui il programma e salva il tempo di esecuzione
-    execution_time=$(mpirun -np 1 --map-by socket --bind-to socket ./mandel $cols $rows -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS)
+    execution_time=$(mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot $cols $rows -2.0 -1.0 1.0 1.0 255 $OMP_NUM_THREADS)
 
     echo "$OMP_NUM_THREADS,$cols,$rows,$execution_time" >> $OUTPUT_CSV
 
