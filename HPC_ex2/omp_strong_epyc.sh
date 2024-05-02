@@ -27,7 +27,7 @@ for OMP_NUM_THREADS in {1..128}; do
 
     # Esegui il programma e misura il tempo di esecuzione
     start_time=$(date +%s.%N)
-    mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot 2400 1600 -2.0 -1.0 1.0 1.0 255 ${OMP_NUM_THREADS}
+    mpirun -np 1 --map-by socket --bind-to socket ./mandelbrot 1000 1000 -2.0 -1.0 1.0 1.0 255 ${OMP_NUM_THREADS}
     end_time=$(date +%s.%N)
     execution_time=$(echo "$end_time - $start_time" | bc)
 

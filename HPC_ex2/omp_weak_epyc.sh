@@ -15,14 +15,13 @@ OUTPUT_CSV="omp_weak_epyc.csv"
 # Inizializza il file CSV con l'intestazione
 echo "OMP_NUM_THREADS,Problem_Size,Execution_Time" > $OUTPUT_CSV
 # Dimensione di base del problema per 1 thread OpenMP
-BASE_COLS=800
-BASE_ROWS=600
+BASE_COLS=1000
 
 for OMP_NUM_THREADS in {2..128..2}; do
     export OMP_NUM_THREADS
     # Aumenta la dimensione del problema proporzionalmente alla radice quadrata del numero di thread
-    let cols=$(echo "scale=0; sqrt($OMP_NUM_THREADS) * $BASE_COLS" | bc)
-    let rows=$(echo "scale=0; sqrt($OMP_NUM_THREADS) * $BASE_ROWS" | bc)
+    let rows = $BASE_COLS * $OMP_NUM_THREADS
+    let cols = $BASE_COLS
 
     # Esegui il programma e misura il tempo di esecuzione
     start_time=$(date +%s.%N)
