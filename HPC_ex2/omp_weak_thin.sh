@@ -1,5 +1,3 @@
-MPI WEAK
-
 #!/bin/bash
 #SBATCH --job-name=HPC-OMP-WeakScaling
 #SBATCH --nodes=1  # Utilizza un singolo nodo
