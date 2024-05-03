@@ -31,8 +31,4 @@ for OMP_NUM_THREADS in {1..24..1}; do
     # Salva il tempo di esecuzione nel file CSV
     echo "$OMP_NUM_THREADS,$execution_time" >> $OUTPUT_CSV
 
-<<<<<<< HEAD
 done
-=======
-done
->>>>>>> 512d63f3e2be1cfe95553079fb5a330b96e405c0
