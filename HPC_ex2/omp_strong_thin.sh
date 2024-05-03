@@ -16,7 +16,7 @@ export OMP_DISPLAY_ENV=true
 export OMP_VERBOSE=VERBOSE
 
 # Definisci il nome del file CSV per salvare i risultati
-OUTPUT_CSV="omp_strong_thin.csv"
+OUTPUT_CSV="elimina.csv"
 
 # Inizializza il file CSV con l'intestazione se non esiste
 echo "OMP_NUM_THREADS,Execution_Time" > $OUTPUT_CSV
