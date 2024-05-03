@@ -9,5 +9,5 @@
 
 module load openMPI/4.1.5/gnu/12.2.1
 
-mpirun ./mandelbrot 800 600 -2.0 -1.0 1.0 1.#!/bin/bash
+mpirun ./mandelbrot 800 600 -2.0 -1.0 1.0 1.0 4
 
